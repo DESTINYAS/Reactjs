@@ -2,8 +2,8 @@ const Home = () => {
   const handleClick = (e) => {
     console.log("hello, ninjas", e);
   };
-  const handleClickAgain = (name, e) => {
-    console.log("hello " + name, e.target);
+  const handleClickAgain = (name) => {
+    console.log("hello " + name);
   };
   return (
     <div className="home">
