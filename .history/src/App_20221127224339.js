@@ -1,13 +1,15 @@
 import "./App.css";
 import Navbar from "./Navbar";
-import Home from "./Home";
 
 function App() {
+  const tittle = "Welcome to the new blog";
+  const likes = 50;
+  const link = "http://www.google.com";
   return (
     <div className="App">
       <div className="content">
         <Navbar />
-        <Home />
+        <h1>App Component</h1>
       </div>
     </div>
   );
