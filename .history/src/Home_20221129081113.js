@@ -1,5 +1,4 @@
 import { useState } from "react";
-import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([
@@ -12,11 +11,7 @@ const Home = () => {
       id: 3,
     },
   ]);
-  return (
-    <div className="home">
-      <BlogList blogs={blogs} title="All Blogs" />
-    </div>
-  );
+  return <div className="home"></div>;
 };
 
 export default Home;
