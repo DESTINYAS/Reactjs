@@ -6,16 +6,14 @@ const Home = () => {
   const [isPending, setisPending] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch("http://localhost:8000/blogs")
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          setBlogs(data);
-          setisPending(false);
-        });
-    }, 1000);
+    fetch("http://localhost:8000/blogs")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+        setisPending(false);
+      });
   }, []);
   return (
     <div className="home">
