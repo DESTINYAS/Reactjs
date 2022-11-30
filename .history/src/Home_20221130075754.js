@@ -17,9 +17,9 @@ const Home = () => {
           return res.json();
         })
         .then((data) => {
+          setError(null);
           setBlogs(data);
           setisPending(false);
-          setError(null);
         })
         .catch((err) => {
           console.log(err.message);

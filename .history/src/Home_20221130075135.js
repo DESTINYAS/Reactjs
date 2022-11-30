@@ -19,12 +19,11 @@ const Home = () => {
         .then((data) => {
           setBlogs(data);
           setisPending(false);
-          setError(null);
         })
         .catch((err) => {
           console.log(err.message);
-          setisPending(false);
           setError(err.message);
+          setisPending(false);
         });
     }, 1000);
   }, []);
