@@ -29,7 +29,6 @@ const Create = () => {
         <button>Add Blog</button>
         <p>{title}</p>
         <p>{body}</p>
-        <p>{author}</p>
       </form>
     </div>
   );
