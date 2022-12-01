@@ -1,5 +1,5 @@
 import { useHistory, useParams } from "react-router-dom";
-// import BlogList from "./BlogList";
+import BlogList from "./BlogList";
 // import { useHistory,useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
