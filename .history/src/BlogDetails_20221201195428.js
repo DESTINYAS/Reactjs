@@ -1,23 +1,16 @@
-import { useHistory, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BlogList from "./BlogList";
-// import { useHistory,useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const history = useHistory();
   const {
     data: blog,
     error,
     isPending,
   } = useFetch("http://localhost:8000/blogs/" + id);
   const handleClick = () => {
-    fetch("http://localhost:8000/blogs/" + blog.id, {
-      method: "DELETE",
-    }).then(() => {
-      console.log("deleted");
-      history.push("/");
-    });
+    fetch("http://localhost:8000/blogs/" + blog.id);
   };
   return (
     <div className="blog-details">
