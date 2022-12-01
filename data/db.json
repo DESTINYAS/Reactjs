@@ -23,6 +23,18 @@
       "body": "React course by Shawn the best among the best",
       "author": "yoshi",
       "id": 4
+    },
+    {
+      "title": "blog",
+      "body": "new blog",
+      "author": "mario",
+      "id": 5
+    },
+    {
+      "title": "Lorem",
+      "body": "        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odio laborum aliquid porro quasi quibusdam ullam quam, maiores blanditiis earum ad. Tenetur laborum eaque animi nihil expedita nam similique porro.",
+      "author": "yoshi",
+      "id": 6
     }
   ]
 }
